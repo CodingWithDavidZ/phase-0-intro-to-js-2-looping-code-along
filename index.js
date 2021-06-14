@@ -9,12 +9,19 @@
 //
 //wrapGifts(gifts);
 const names = ["Lisa", "Kaitlyn", "Jan"]
-const event = ["Surprise", "Surprise2", "Surprise3"]
+const event = ["Surprise"]
 
 function writeCards(names, event) {
+    let newArray = []
     for (let i =0; i< names.length; i++) {
-        let newArray = []
-        newArray.push = (`Thank you, ${names[i]}, for the wonderful ${event} gift`)
+        newArray.push(`Thank you, ${names[i]}, for the wonderful ${event} gift!`)
     }
-    return newArray
+    return newArray;
+}
+
+function countDown(n){
+let countDown = n;
+    while (countDown >= 0) {
+        console.log(countDown--);
+    }
 }
